@@ -40,7 +40,7 @@ nav i{
 }
 header{
     top: 6vh;
-    min-width: 90%;
+    min-width: 100%;
     background: linear-gradient(45deg, rgb(100, 100, 167), aliceblue 30%,  rgb(117, 117, 212) );
     background-repeat: no-repeat;
     background-size: cover;
@@ -89,6 +89,7 @@ header div div a{
     border-color: transparent;
     transition: ease-in 1s;
     flex-warp: nowarp;
+    
 }
 header div div a:nth-child(2){
    background-color: whitesmoke; 
@@ -210,7 +211,7 @@ footer{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         min-height: 50vh;
-        max-width: 100%;
+        min-width: 100%;
         overflow-x: hidden;
         align-items: center;
     } 
