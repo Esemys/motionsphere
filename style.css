@@ -88,6 +88,7 @@ header div div a{
     color: whitesmoke;
     border-color: transparent;
     transition: ease-in 1s;
+    flex-warp: nowarp;
 }
 header div div a:nth-child(2){
    background-color: whitesmoke; 
