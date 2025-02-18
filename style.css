@@ -1,0 +1,231 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    text-decoration: none;
+    display: inline-flex;
+}
+li{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto auto;
+    position: fixed;
+    min-width: 100%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: larger;
+    color: rgb(8, 8, 20);
+}
+nav div{
+    font-size: larger;
+    font-weight: bolder;
+}
+nav i{
+    font-weight: lighter;
+}
+header{
+    top: 6vh;
+    min-width: 100%;
+    background: linear-gradient(45deg, rgb(100, 100, 167), aliceblue 30%,  rgb(117, 117, 212) );
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+header div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-height: 100vh;
+    width: 70%;
+    border-radius: 9px;
+    order: 1;
+    flex-wrap: nowrap;
+    margin: 7em;
+}
+header div h1{
+    font-size: 2em;
+    gap: 1em;
+    line-gap-override: 1em;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+header div i{
+    font-weight: 300;
+}
+header div div a{
+    display: inline-flex;
+    text-transform: capitalize;
+    margin: 0 1em;
+    padding: 0.6em 1em;
+    background-color: rgb(16, 16, 56);
+    border-radius: 9px;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    color: whitesmoke;
+    border-color: transparent;
+    transition: ease-in 1s;
+}
+header div div a:nth-child(2){
+   background-color: whitesmoke; 
+   color: rgb(16, 16, 56);
+}
+
+header div div a:hover{
+    background-color: #333;
+    color: whitesmoke;
+}
+header div div{
+    display: flex;
+    flex-direction: row;
+}
+header iframe{
+    width: 100%;
+    order: 2;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+
+
+.services{
+    min-height: 60vh;
+    background: linear-gradient(45deg, rgb(100, 100, 167), aliceblue 30%,  rgb(117, 117, 212) );
+    background-repeat: no-repeat;
+    list-style-type: disc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0;
+}
+h2{
+    text-transform: capitalize;
+    text-decoration: underline;
+    margin: 0 0.6em;
+    padding-bottom: 1em;
+}
+
+.services ul li{
+    margin: 1em 2.6em;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    list-style: circle;
+}
+.services ul li:nth-child(5){
+    list-style: none;
+    font-style: italic;
+}
+.cta{
+    background-color: rgb(16, 16, 56);
+    padding: 0.7em 1.4em;
+    border-radius: 9px;
+    border-color: aquamarine;
+    color: whitesmoke;
+    border: solid;
+    text-transform: uppercase;
+    text-decoration: solid;
+    display: flex;
+    justify-content: center;
+    place-self: center;
+    cursor: pointer;
+    margin: 1em;
+}
+.photos{
+    background: linear-gradient(45deg, rgb(100, 100, 167), aliceblue 30%,  rgb(117, 117, 212) );
+}
+.photos h2{
+    padding: 2em;
+    text-align: center;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    min-height: 100vh;
+    margin: 1em;
+    list-style: none;
+    justify-items: center;
+    align-items: center;
+}
+li img{
+    height: 200px;
+    width: 16em;
+    object-fit: cover;
+    margin: 1em;
+}
+
+.social{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5em;
+}
+.social a{
+    color: rgb(100, 100, 167);
+    margin: 0 0.4em;
+}
+
+.social h5{
+    text-decoration: underline;
+    color: #222;
+}
+footer{
+    background: linear-gradient(1deg, rgb(226, 226, 230) 30%, aliceblue);
+    font-weight: bolder;
+    text-wrap: wrap;
+    font-size: small;
+    padding: 1.3em;
+}
+
+
+@media  only screen and (min-width: 99px) {
+    header{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        min-height: 50vh;
+        max-width: 100%;
+        overflow-x: hidden;
+        align-items: center;
+    } 
+}
+
+
+
+@media only screen and (max-width: 768px){
+
+header{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    min-height: 50vh;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+}
+
+
+}
