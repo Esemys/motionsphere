@@ -7,7 +7,7 @@
 .link{
     position: fixed;
     right: 1em;
-    bottom: 2em;
+    bottom: 3em;
 }
 
 a{
@@ -103,7 +103,7 @@ header div div{
     flex-direction: row;
 }
 header iframe{
-    width: 60%;
+    
     order: 2;
     object-fit: cover;
     object-position: center;
