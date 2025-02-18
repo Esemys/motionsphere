@@ -4,6 +4,11 @@
     padding: 0;
 
 }
+.link{
+    position: fixed;
+    right: 1em;
+    bottom: 2em;
+}
 
 a{
     text-decoration: none;
@@ -35,7 +40,7 @@ nav i{
 }
 header{
     top: 6vh;
-    min-width: 100%;
+    min-width: 90%;
     background: linear-gradient(45deg, rgb(100, 100, 167), aliceblue 30%,  rgb(117, 117, 212) );
     background-repeat: no-repeat;
     background-size: cover;
@@ -57,7 +62,7 @@ header div{
     border-radius: 9px;
     order: 1;
     flex-wrap: nowrap;
-    margin: 7em;
+    margin-top: 7em;
 }
 header div h1{
     font-size: 2em;
