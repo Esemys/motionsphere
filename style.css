@@ -98,7 +98,7 @@ header div div{
     flex-direction: row;
 }
 header iframe{
-    width: 100%;
+    width: 60%;
     order: 2;
     object-fit: cover;
     object-position: center;
@@ -199,7 +199,7 @@ footer{
 }
 
 
-@media  only screen and (min-width: 99px) {
+@media  only screen and (min-width: 992px) {
     header{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -226,6 +226,8 @@ header{
     grid-template-columns: repeat(1, 1fr);
     align-items: center;
 }
+header iframe{
+    width: 100%;
 
 
 }
