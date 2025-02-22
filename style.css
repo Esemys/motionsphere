@@ -34,6 +34,11 @@ nav{
     font-size: larger;
     
 }
+nav div{
+    display:flex;
+    font-size: bolder;
+    font-weight: 900;
+} 
 .img{
     width: 9%;
 }
