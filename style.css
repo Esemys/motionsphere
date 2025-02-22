@@ -38,6 +38,7 @@ nav div{
     display:flex;
     font-size: bolder;
     font-weight: 900;
+    text-transform: capitalize;
 } 
 .img{
     width: 9%;
