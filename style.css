@@ -45,6 +45,12 @@ li{
 #nav.hidden {
     transform: translateY(-100%);
   }
+.side-menu{
+    display: none;
+}
+.sidebar{
+    display: none;
+}
 
 .img{
     width: 4em;
