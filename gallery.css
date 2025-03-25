@@ -1,0 +1,50 @@
+
+.image-container{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 2em;
+	margin: 1em;
+
+}
+.hidden {
+	display: none;
+  }
+#see-more-btn{
+	padding: .6em;
+	background-color: orange;
+	color: teal;
+	border-radius: 9px;
+}
+#see-more-btn:hover{
+	cursor: pointer;
+}
+.li-img{
+	aspect-ratio: 9/16;
+	width: 100%;
+	height: 100%;
+}
+.section{
+	display: flex;
+	flex-direction: column;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-weight: 700;
+	margin: 2em;
+	font-size: 1.3em;
+}
+.video-container{
+	display: flex;
+	flex-direction: column;
+}
+.video-list{
+	display: flex;
+	align-items: center;
+	flex-wrap: nowrap;
+	margin: 1em 0em;
+}
+.video-item{
+	width: 50%;
+	height: 100%;
+	aspect-ratio: 4/3;
+}
+

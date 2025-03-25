@@ -1,0 +1,265 @@
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery</title>
+    
+</head>
+<body>
+    <section id="gallery" class="photos">
+        <h2 id="gallery-title"></h2>
+        <ul id="image-container" class="image-container"></ul>
+        <button id="see-more-btn">See More</button>
+        <ul id="video-container" class="video-container"></ul>
+    </section>
+
+    <script>
+        const gallery = {
+            title: "Gallery",
+            images: [
+                { src: "motionsphere1.jpeg", alt: "photo1" },
+                { src: "motionsphere2.jpeg", alt: "photo2" },
+                { src: "motionsphere3.jpeg", alt: "photo3" },
+                { src: "motionsphere4.jpeg", alt: "photo4", hidden: true },
+                { src: "motionsphere5.jpeg", alt: "photo5", hidden: true },
+                { src: "motionsphere6.jpeg", alt: "photo6", hidden: true },
+                { src: "motionsphere7.jpeg", alt: "photo7", hidden: true },
+                { src: "motionsphere8.jpeg", alt: "photo8", hidden: true },
+                { src: "motionsphere9.jpeg", alt: "photo9", hidden: true }
+            ],
+            videos: [
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                },
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                },
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                }
+            ]
+        };
+
+        const galleryTitle = document.getElementById("gallery-title");
+        const imageContainer = document.getElementById("image-container");
+        const videoContainer = document.getElementById("video-container");
+
+        galleryTitle.textContent = gallery.title;
+
+        gallery.images.forEach((image) => {
+            const imageElement = document.createElement("li");
+            const imageTag = document.createElement("img");
+
+            imageTag.src = image.src;
+            imageTag.alt = image.alt;
+            imageTag.classList.add("li-img");
+
+            if (image.hidden) {
+                imageElement.classList.add("hidden");
+            }
+
+            imageElement.appendChild(imageTag);
+            imageContainer.appendChild(imageElement);
+        });
+
+        gallery.videos.forEach((video) => {
+            const videoElement = document.createElement("li");
+            const videoTag = document.createElement("video");
+            const descriptionParagraph = document.createElement("p");
+
+            videoTag.src = video.src;
+            videoTag.controls = true;
+            descriptionParagraph.textContent = video.description;
+
+            videoElement.appendChild(videoTag);
+            videoElement.appendChild(descriptionParagraph);
+            videoContainer.appendChild(videoElement);
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
+
+    <!-- The gallery.html file contains the HTML structure for the gallery page. The gallery object contains the title of the gallery, an array of images, and an array of videos. The images array contains objects with the source and alt attributes of the image, and an optional hidden attribute to hide the image. The videos array contains objects with the source of the video and a description. The script dynamically creates the gallery content based on the gallery object, including images and videos with their respective attributes.
+    -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e7e58c941.js" crossorigin="anonymous"></script>
+    <title>Gallery</title>
+</head>
+<body>
+    <nav id="nav">
+        <img class="img" src="bbb.png" alt="motionsphere-logo">
+        <div class="main-menu">
+            <li>
+                <a class="lia" href="#">Home</a>
+            </li>
+            <li>
+                <a class="lia"  href="blog-post.html">Blogs</a>
+            </li>
+            <li>
+                <a class="lia"  href="gallery.html">Portfolio</a>
+            </li>
+            <li>
+                <a class="lia"  href="#about-us">About Us</a>
+            </li>
+            <li>
+                <a class="lia"  href="#contact">Contact Us</a>
+            </li>
+        </div>
+        <i onclick=showBar() class="fa-solid fa-2x fa-bars"></i>
+        <!--side menu-->
+        <div class="side-menu" id="side-menu">
+            <div class="sidebar">
+                <i onclick=hideBar() class="fa-solid fa-2x fa-times "></i>
+                <ul>
+                    <li>
+                        <a class="lia" href="#">Home</a>
+                    </li>
+                    <li>
+                        <a class="lia" href="blog-post.html">Blogs</a>
+                    </li>
+                    <li>
+                        <a class="lia" href="gallery.html">Portfolio</a>
+                    </li>
+                    <li>
+                        <a class="lia" href="#about-us">About Us</a>
+                    </li>
+                    <li>
+                        <a class="lia" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+                <section class="social">
+                    <div>
+                        <a class="diva" href="https://www.facebook.com/share/19w3pcFyty/?mibextid=wwXIfr">
+                            <i class="fa-brands fa-lg fa-facebook"></i>
+                        </a>
+                        <a class="diva" href="https://www.instagram.com/motionspheremedia/?igsh=MXNtd3FtM3V1dWV6eA%3D%3D&utm_source=qr#">
+                            <i class="fa-brands fa-lg fa-instagram"></i>
+                        </a> 
+                        <a class="diva" href="https://x.com/motionspherem?s=21">
+                            <i class="fa-brands fa-lg fa-x"></i>
+                        </a>       
+                        <a class="diva" href="https://www.tiktok.com/@motionsphereedits?_t=ZM-8u6xNTvwbw6&_r=1">
+                            <i class="fa-brands fa-lg fa-tiktok"></i>
+                        </a>
+                    </div>
+                    <!-- T and C here-->
+                    
+                </section>
+                <footer>&copy; 2025 MotionSphere Studio. All Right Reserved</footer>
+            </div>
+        </div>
+    </nav>
+    <section id="gallery" class="photos">
+        <h2 id="gallery-title"></h2>
+        <ul id="image-container" class="image-container"></ul>
+        <button id="see-more-btn">See More</button>
+        <ul id="video-container" class="video-container"></ul>
+    </section>
+    <section class="social">
+        <div>
+            <a class="diva" href="https://www.facebook.com/share/19w3pcFyty/?mibextid=wwXIfr">
+                <i class="fa-brands fa-lg fa-facebook"></i>
+            </a>
+            <a class="diva" href="https://www.instagram.com/motionspheremedia/?igsh=MXNtd3FtM3V1dWV6eA%3D%3D&utm_source=qr#">
+                <i class="fa-brands fa-lg fa-instagram"></i>
+            </a> 
+            <a class="diva" href="https://x.com/motionspherem?s=21">
+                <i class="fa-brands fa-lg fa-x"></i>
+            </a>       
+            <a class="diva" href="https://www.tiktok.com/@motionsphereedits?_t=ZM-8u6xNTvwbw6&_r=1">
+                <i class="fa-brands fa-lg fa-tiktok"></i>
+            </a>
+        </div>
+        <!-- T and C here-->
+        <a class="link" href="https://wa.me/message/ITW72N32SJ5RB1">
+            <i class="fa-brands fa-2x fa-whatsapp"></i>
+            <p>chat with us</p>
+        </a>
+    </section>
+    <footer>&copy; 2025 MotionSphere Studio. All Right Reserved</footer>
+    <script>
+        const gallery = {
+            title: "Gallery",
+            images: [
+                { src: "motionsphere1.jpeg", alt: "photo1" },
+                { src: "motionsphere2.jpeg", alt: "photo2" },
+                { src: "motionsphere3.jpeg", alt: "photo3" },
+                { src: "motionsphere4.jpeg", alt: "photo4", hidden: true },
+                { src: "motionsphere5.jpeg", alt: "photo5", hidden: true },
+                { src: "motionsphere6.jpeg", alt: "photo6", hidden: true },
+                { src: "motionsphere7.jpeg", alt: "photo7", hidden: true },
+                { src: "motionsphere8.jpeg", alt: "photo8", hidden: true },
+                { src: "motionsphere9.jpeg", alt: "photo9", hidden: true }
+            ],
+            videos: [
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                },
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                },
+                {
+                    src: "In vain (1) (compressed).mp4",
+                    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio quis quasi quisquam!"
+                }
+            ]
+        };
+
+        const galleryTitle = document.getElementById("gallery-title");
+        const imageContainer = document.getElementById("image-container");
+        const videoContainer = document.getElementById("video-container");
+
+        galleryTitle.textContent = gallery.title;
+
+        gallery.images.forEach((image) => {
+            const imageElement = document.createElement("li");
+            const imageTag = document.createElement("img");
+
+            imageTag.src = image.src;
+            imageTag.alt = image.alt;
+            imageTag.classList.add("li-img");
+
+            if (image.hidden) {
+                imageElement.classList.add("hidden");
+            }
+
+            imageElement.appendChild(imageTag);
+            imageContainer.appendChild(imageElement);
+        });
+
+        gallery.videos.forEach((video) => {
+            const videoElement = document.createElement("li");
+            videoElement.classList.add("video-list");
+
+            const videoTag = document.createElement("video");
+            videoTag.src = video.src;
+            videoTag.controls = true;
+            videoTag.classList.add("video-item");
+
+            const descriptionParagraph = document.createElement("p");
+            descriptionParagraph.textContent = video.description;
+
+            videoElement.appendChild(videoTag);
+            videoElement.appendChild(descriptionParagraph);
+            videoContainer.appendChild(videoElement);
+        });
+    </script>
+    <script src="index.js"></script>
+</body>
+</html>
